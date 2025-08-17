@@ -1,0 +1,48 @@
+# API keys and secrets
+.env
+.env~
+
+# aptx-cli settings
+.aptx-cli/
+!aptx-cli/config.yaml
+
+# Note: .aptx-cli-clipboard/ is NOT in gitignore so APTX CLI can access pasted images
+
+# Embedded repositories
+nikto/
+
+# Dependency directory
+node_modules
+bower_components
+
+# Editors
+.idea
+*.iml
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# TypeScript build info files
+*.tsbuildinfo
+
+# Ignore built ts files
+dist
+
+# Docker folder to help skip auth refreshes
+.docker
+
+bundle
+
+# Test report files
+junit.xml
+packages/*/coverage/
+
+# Generated files
+packages/cli/src/generated/
+.integration-tests/
+packages/vscode-ide-companion/*.vsix
+
+# Qwen Code Configs
+.apt-cli/
+logs/
