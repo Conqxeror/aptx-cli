@@ -13,14 +13,14 @@ import {
   getMCPServerStatus,
   getMCPDiscoveryState,
   DiscoveredMCPTool,
-} from '@aptx-cli/aptx-cli-core';
+} from '@conqxeror/aptx-cli-core';
 
 import { MessageActionReturn } from './types.js';
 import { Type, CallableTool } from '@google/genai';
 
-vi.mock('@aptx-cli/aptx-cli-core', async (importOriginal) => {
+vi.mock('@conqxeror/aptx-cli-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@aptx-cli/aptx-cli-core')>();
+    await importOriginal<typeof import('@conqxeror/aptx-cli-core')>();
   return {
     ...actual,
     getMCPServerStatus: vi.fn(),
@@ -885,7 +885,7 @@ describe('mcpCommand', () => {
         },
       });
 
-      const { MCPOAuthProvider } = await import('@aptx-cli/aptx-cli-core');
+      const { MCPOAuthProvider } = await import('@conqxeror/aptx-cli-core');
 
       const authCommand = mcpCommand.subCommands?.find(
         (cmd) => cmd.name === 'auth',
@@ -920,7 +920,7 @@ describe('mcpCommand', () => {
         },
       });
 
-      const { MCPOAuthProvider } = await import('@aptx-cli/aptx-cli-core');
+      const { MCPOAuthProvider } = await import('@conqxeror/aptx-cli-core');
       (
         MCPOAuthProvider.authenticate as ReturnType<typeof vi.fn>
       ).mockRejectedValue(new Error('Auth failed'));

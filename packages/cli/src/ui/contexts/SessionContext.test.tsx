@@ -14,7 +14,7 @@ import {
   SessionMetrics,
 } from './SessionContext.js';
 import { describe, it, expect, vi } from 'vitest';
-import { uiTelemetryService } from '@aptx-cli/aptx-cli-core';
+import { uiTelemetryService } from '@conqxeror/aptx-cli-core';
 
 /**
  * A test harness component that uses the hook and exposes the context value

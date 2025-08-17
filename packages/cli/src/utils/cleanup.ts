@@ -6,7 +6,7 @@
 
 import { promises as fs } from 'fs';
 import { join } from 'path';
-import { getProjectTempDir } from '@aptx-cli/aptx-cli-core';
+import { getProjectTempDir } from '@conqxeror/aptx-cli-core';
 
 const cleanupFunctions: Array<() => void> = [];
 

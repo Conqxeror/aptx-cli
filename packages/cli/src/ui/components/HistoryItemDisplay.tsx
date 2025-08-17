@@ -20,7 +20,7 @@ import { StatsDisplay } from './StatsDisplay.js';
 import { ModelStatsDisplay } from './ModelStatsDisplay.js';
 import { ToolStatsDisplay } from './ToolStatsDisplay.js';
 import { SessionSummaryDisplay } from './SessionSummaryDisplay.js';
-import { Config } from '@aptx-cli/aptx-cli-core';
+import { Config } from '@conqxeror/aptx-cli-core';
 import { Help } from './Help.js';
 import { SlashCommand } from '../commands/types.js';
 

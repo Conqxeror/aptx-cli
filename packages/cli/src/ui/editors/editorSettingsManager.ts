@@ -8,7 +8,7 @@ import {
   allowEditorTypeInSandbox,
   checkHasEditorType,
   type EditorType,
-} from '@aptx-cli/aptx-cli-core';
+} from '@conqxeror/aptx-cli-core';
 
 export interface EditorDisplay {
   name: string;

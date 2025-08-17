@@ -9,7 +9,7 @@ import {
   Config,
   getProjectCommandsDir,
   getUserCommandsDir,
-} from '@aptx-cli/aptx-cli-core';
+} from '@conqxeror/aptx-cli-core';
 import mock from 'mock-fs';
 import { FileCommandLoader } from './FileCommandLoader.js';
 import { assert, vi } from 'vitest';
@@ -54,9 +54,9 @@ vi.mock('./prompt-processors/argumentProcessor.js', async (importOriginal) => {
       .mockImplementation(() => new original.DefaultArgumentProcessor()),
   };
 });
-vi.mock('@aptx-cli/aptx-cli-core', async (importOriginal) => {
+vi.mock('@conqxeror/aptx-cli-core', async (importOriginal) => {
   const original =
-    await importOriginal<typeof import('@aptx-cli/aptx-cli-core')>();
+    await importOriginal<typeof import('@conqxeror/aptx-cli-core')>();
   return {
     ...original,
     isCommandAllowed: vi.fn(),

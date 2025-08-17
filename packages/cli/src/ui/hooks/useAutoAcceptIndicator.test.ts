@@ -20,14 +20,14 @@ import {
   Config,
   Config as ActualConfigType,
   ApprovalMode,
-} from '@aptx-cli/aptx-cli-core';
+} from '@conqxeror/aptx-cli-core';
 import { useInput, type Key as InkKey } from 'ink';
 
 vi.mock('ink');
 
-vi.mock('@aptx-cli/aptx-cli-core', async () => {
+vi.mock('@conqxeror/aptx-cli-core', async () => {
   const actualServerModule = (await vi.importActual(
-    '@aptx-cli/aptx-cli-core',
+    '@conqxeror/aptx-cli-core',
   )) as Record<string, unknown>;
   return {
     ...actualServerModule,

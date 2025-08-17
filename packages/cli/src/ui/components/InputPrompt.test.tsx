@@ -8,7 +8,7 @@ import { render } from 'ink-testing-library';
 import { waitFor } from '@testing-library/react';
 import { InputPrompt, InputPromptProps } from './InputPrompt.js';
 import type { TextBuffer } from './shared/text-buffer.js';
-import { Config } from '@aptx-cli/aptx-cli-core';
+import { Config } from '@conqxeror/aptx-cli-core';
 import * as path from 'path';
 import {
   CommandContext,

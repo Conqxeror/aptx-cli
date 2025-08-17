@@ -5,7 +5,7 @@
  */
 
 import { useState, useEffect } from 'react';
-import { sessionId, Logger } from '@aptx-cli/aptx-cli-core';
+import { sessionId, Logger } from '@conqxeror/aptx-cli-core';
 
 /**
  * Hook to manage the logger instance.

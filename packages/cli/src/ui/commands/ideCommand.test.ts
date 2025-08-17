@@ -15,12 +15,12 @@ import {
 } from 'vitest';
 import { ideCommand } from './ideCommand.js';
 import { type CommandContext } from './types.js';
-import { type Config, DetectedIde } from '@aptx-cli/aptx-cli-core';
-import * as core from '@aptx-cli/aptx-cli-core';
+import { type Config, DetectedIde } from '@conqxeror/aptx-cli-core';
+import * as core from '@conqxeror/aptx-cli-core';
 
 vi.mock('child_process');
 vi.mock('glob');
-vi.mock('@aptx-cli/aptx-cli-core');
+vi.mock('@conqxeror/aptx-cli-core');
 
 describe('ideCommand', () => {
   let mockContext: CommandContext;

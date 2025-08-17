@@ -7,7 +7,7 @@
 import { render } from 'ink-testing-library';
 import { describe, it, expect, vi } from 'vitest';
 import { ToolConfirmationMessage } from './ToolConfirmationMessage.js';
-import { ToolCallConfirmationDetails } from '@aptx-cli/aptx-cli-core';
+import { ToolCallConfirmationDetails } from '@conqxeror/aptx-cli-core';
 
 describe('ToolConfirmationMessage', () => {
   it('should not display urls if prompt and url are the same', () => {

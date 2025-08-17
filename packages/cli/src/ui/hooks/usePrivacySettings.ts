@@ -9,7 +9,7 @@ import {
   Config,
   CodeAssistServer,
   UserTierId,
-} from '@aptx-cli/aptx-cli-core';
+} from '@conqxeror/aptx-cli-core';
 
 export interface PrivacyState {
   isLoading: boolean;

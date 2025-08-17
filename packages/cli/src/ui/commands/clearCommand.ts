@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { uiTelemetryService } from '@aptx-cli/aptx-cli-core';
+import { uiTelemetryService } from '@conqxeror/aptx-cli-core';
 import { CommandKind, SlashCommand } from './types.js';
 
 export const clearCommand: SlashCommand = {

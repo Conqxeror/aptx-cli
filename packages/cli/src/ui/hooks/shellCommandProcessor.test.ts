@@ -17,9 +17,9 @@ import {
 
 const mockIsBinary = vi.hoisted(() => vi.fn());
 const mockShellExecutionService = vi.hoisted(() => vi.fn());
-vi.mock('@aptx-cli/aptx-cli-core', async (importOriginal) => {
+vi.mock('@conqxeror/aptx-cli-core', async (importOriginal) => {
   const original =
-    await importOriginal<typeof import('@aptx-cli/aptx-cli-core')>();
+    await importOriginal<typeof import('@conqxeror/aptx-cli-core')>();
   return {
     ...original,
     ShellExecutionService: { execute: mockShellExecutionService },
@@ -40,7 +40,7 @@ import {
   type GeminiClient,
   type ShellExecutionResult,
   type ShellOutputEvent,
-} from '@aptx-cli/aptx-cli-core';
+} from '@conqxeror/aptx-cli-core';
 import * as fs from 'fs';
 import * as os from 'os';
 import * as path from 'path';

@@ -6,7 +6,7 @@
 
 import { useState, useEffect } from 'react';
 import { useInput } from 'ink';
-import { ApprovalMode, type Config } from '@aptx-cli/aptx-cli-core';
+import { ApprovalMode, type Config } from '@conqxeror/aptx-cli-core';
 
 export interface UseAutoAcceptIndicatorArgs {
   config: Config;

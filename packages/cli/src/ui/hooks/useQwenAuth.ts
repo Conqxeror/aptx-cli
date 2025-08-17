@@ -10,7 +10,7 @@ import {
   AuthType,
   qwenOAuth2Events,
   QwenOAuth2Event,
-} from '@aptx-cli/aptx-cli-core';
+} from '@conqxeror/aptx-cli-core';
 
 export interface DeviceAuthorizationInfo {
   verification_uri: string;

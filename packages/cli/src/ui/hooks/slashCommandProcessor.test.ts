@@ -9,9 +9,9 @@ const { logSlashCommand, SlashCommandEvent } = vi.hoisted(() => ({
   SlashCommandEvent: vi.fn((command, subCommand) => ({ command, subCommand })),
 }));
 
-vi.mock('@aptx-cli/aptx-cli-core', async (importOriginal) => {
+vi.mock('@conqxeror/aptx-cli-core', async (importOriginal) => {
   const original =
-    await importOriginal<typeof import('@aptx-cli/aptx-cli-core')>();
+    await importOriginal<typeof import('@conqxeror/aptx-cli-core')>();
   return {
     ...original,
     logSlashCommand,
@@ -69,7 +69,7 @@ import {
   ConfirmShellCommandsActionReturn,
   SlashCommand,
 } from '../commands/types.js';
-import { Config, ToolConfirmationOutcome } from '@aptx-cli/aptx-cli-core';
+import { Config, ToolConfirmationOutcome } from '@conqxeror/aptx-cli-core';
 import { LoadedSettings } from '../../config/settings.js';
 import { MessageType } from '../types.js';
 import { BuiltinCommandLoader } from '../../services/BuiltinCommandLoader.js';

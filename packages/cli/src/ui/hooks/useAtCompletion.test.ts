@@ -9,7 +9,7 @@
 import { describe, it, expect, beforeEach, vi, afterEach } from 'vitest';
 import { renderHook, waitFor, act } from '@testing-library/react';
 import { useAtCompletion } from './useAtCompletion.js';
-import { Config, FileSearch } from '@aptx-cli/aptx-cli-core';
+import { Config, FileSearch } from '@conqxeror/aptx-cli-core';
 import {
   createTmpDir,
   cleanupTmpDir,

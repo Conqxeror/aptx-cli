@@ -14,11 +14,11 @@ import {
   getErrorMessage,
   loadServerHierarchicalMemory,
   type FileDiscoveryService,
-} from '@aptx-cli/aptx-cli-core';
+} from '@conqxeror/aptx-cli-core';
 
-vi.mock('@aptx-cli/aptx-cli-core', async (importOriginal) => {
+vi.mock('@conqxeror/aptx-cli-core', async (importOriginal) => {
   const original =
-    await importOriginal<typeof import('@aptx-cli/aptx-cli-core')>();
+    await importOriginal<typeof import('@conqxeror/aptx-cli-core')>();
   return {
     ...original,
     getErrorMessage: vi.fn((error: unknown) => {

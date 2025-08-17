@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { AuthType } from '@aptx-cli/aptx-cli-core';
+import { AuthType } from '@conqxeror/aptx-cli-core';
 import { vi } from 'vitest';
 import { validateAuthMethod } from './auth.js';
 

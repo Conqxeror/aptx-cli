@@ -18,7 +18,7 @@ import { useReverseSearchCompletion } from '../hooks/useReverseSearchCompletion.
 import { useCommandCompletion } from '../hooks/useCommandCompletion.js';
 import { useKeypress, Key } from '../hooks/useKeypress.js';
 import { CommandContext, SlashCommand } from '../commands/types.js';
-import { Config } from '@aptx-cli/aptx-cli-core';
+import { Config } from '@conqxeror/aptx-cli-core';
 import {
   clipboardHasImage,
   saveClipboardImage,

@@ -1,5 +1,5 @@
 {
-  "name": "@aptx-cli/aptx-cli",
+  "name": "@conqxeror/aptx-cli",
   "version": "0.0.1",
   "engines": {
     "node": ">=20.0.0"

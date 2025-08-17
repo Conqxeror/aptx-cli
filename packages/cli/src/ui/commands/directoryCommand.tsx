@@ -8,7 +8,7 @@ import { SlashCommand, CommandContext, CommandKind } from './types.js';
 import { MessageType } from '../types.js';
 import * as os from 'os';
 import * as path from 'path';
-import { loadServerHierarchicalMemory } from '@aptx-cli/aptx-cli-core';
+import { loadServerHierarchicalMemory } from '@conqxeror/aptx-cli-core';
 
 export function expandHomeDir(p: string): string {
   if (!p) {

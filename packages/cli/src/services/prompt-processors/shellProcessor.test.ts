@@ -8,12 +8,12 @@ import { vi, describe, it, expect, beforeEach } from 'vitest';
 import { ConfirmationRequiredError, ShellProcessor } from './shellProcessor.js';
 import { createMockCommandContext } from '../../test-utils/mockCommandContext.js';
 import { CommandContext } from '../../ui/commands/types.js';
-import { Config } from '@aptx-cli/aptx-cli-core';
+import { Config } from '@conqxeror/aptx-cli-core';
 
 const mockCheckCommandPermissions = vi.hoisted(() => vi.fn());
 const mockShellExecute = vi.hoisted(() => vi.fn());
 
-vi.mock('@aptx-cli/aptx-cli-core', async (importOriginal) => {
+vi.mock('@conqxeror/aptx-cli-core', async (importOriginal) => {
   const original = await importOriginal<object>();
   return {
     ...original,

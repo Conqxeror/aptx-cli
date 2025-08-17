@@ -7,7 +7,7 @@
 import React from 'react';
 import { Box, Text } from 'ink';
 import { Colors } from '../colors.js';
-import { ApprovalMode } from '@aptx-cli/aptx-cli-core';
+import { ApprovalMode } from '@conqxeror/aptx-cli-core';
 
 interface AutoAcceptIndicatorProps {
   approvalMode: ApprovalMode;

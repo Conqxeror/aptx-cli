@@ -7,10 +7,10 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { getStartupWarnings } from './startupWarnings.js';
 import * as fs from 'fs/promises';
-import { getErrorMessage } from '@aptx-cli/aptx-cli-core';
+import { getErrorMessage } from '@conqxeror/aptx-cli-core';
 
 vi.mock('fs/promises');
-vi.mock('@aptx-cli/aptx-cli-core', async (importOriginal) => {
+vi.mock('@conqxeror/aptx-cli-core', async (importOriginal) => {
   const actual = await importOriginal();
   return {
     ...actual,

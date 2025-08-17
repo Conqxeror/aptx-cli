@@ -10,7 +10,7 @@ import { Colors } from '../colors.js';
 import {
   type IdeContext,
   type MCPServerConfig,
-} from '@aptx-cli/aptx-cli-core';
+} from '@conqxeror/aptx-cli-core';
 
 interface ContextSummaryDisplayProps {
   geminiMdFileCount: number;

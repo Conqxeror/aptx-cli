@@ -9,7 +9,7 @@ import {
   validateNonInteractiveAuth,
   NonInteractiveConfig,
 } from './validateNonInterActiveAuth.js';
-import { AuthType } from '@aptx-cli/aptx-cli-core';
+import { AuthType } from '@conqxeror/aptx-cli-core';
 import * as auth from './config/auth.js';
 
 describe('validateNonInterActiveAuth', () => {

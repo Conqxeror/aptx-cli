@@ -7,7 +7,7 @@
 import React from 'react';
 import { Box, Text } from 'ink';
 import { Colors } from '../colors.js';
-import { type Config } from '@aptx-cli/aptx-cli-core';
+import { type Config } from '@conqxeror/aptx-cli-core';
 
 interface TipsProps {
   config: Config;
@@ -17,28 +17,39 @@ export const Tips: React.FC<TipsProps> = ({ config }) => {
   const geminiMdFileCount = config.getGeminiMdFileCount();
   return (
     <Box flexDirection="column">
-      <Text color={Colors.Foreground}>Tips for getting started:</Text>
+      <Text color={Colors.Foreground}>🎯 APTX CLI - Elite Penetration Testing Tips:</Text>
       <Text color={Colors.Foreground}>
-        1. Ask questions, edit files, or run commands.
+        1. 🧘‍♂️ Try{' '}
+        <Text bold color={Colors.AccentPurple}>
+          monk mode
+        </Text>{' '}
+        for elite vulnerability hunting on targets
       </Text>
       <Text color={Colors.Foreground}>
-        2. Be specific for the best results.
+        2. 🔍 Ask: "Scan target https://example.com for OWASP Top 10 vulnerabilities"
+      </Text>
+      <Text color={Colors.Foreground}>
+        3. 🛠️ Use{' '}
+        <Text bold color={Colors.AccentPurple}>
+          /install
+        </Text>{' '}
+        to auto-install security tools (nmap, nikto, sqlmap, etc.)
       </Text>
       {geminiMdFileCount === 0 && (
         <Text color={Colors.Foreground}>
-          3. Create{' '}
+          4. 📝 Create{' '}
           <Text bold color={Colors.AccentPurple}>
-            QWEN.md
+            monkMode.md
           </Text>{' '}
-          files to customize your interactions with Qwen Code.
+          files to customize your penetration testing workflows
         </Text>
       )}
       <Text color={Colors.Foreground}>
-        {geminiMdFileCount === 0 ? '4.' : '3.'}{' '}
+        {geminiMdFileCount === 0 ? '5.' : '4.'}{' '}
         <Text bold color={Colors.AccentPurple}>
           /help
         </Text>{' '}
-        for more information.
+        for complete command reference and examples
       </Text>
     </Box>
   );

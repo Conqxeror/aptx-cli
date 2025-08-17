@@ -15,7 +15,7 @@ import {
   SETTINGS_DIRECTORY_NAME,
 } from '../config/settings.js';
 import { promisify } from 'util';
-import { Config, SandboxConfig } from '@aptx-cli/aptx-cli-core';
+import { Config, SandboxConfig } from '@conqxeror/aptx-cli-core';
 
 const execAsync = promisify(exec);
 

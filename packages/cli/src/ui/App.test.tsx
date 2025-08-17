@@ -16,7 +16,7 @@ import {
   SandboxConfig,
   GeminiClient,
   ideContext,
-} from '@aptx-cli/aptx-cli-core';
+} from '@conqxeror/aptx-cli-core';
 import { LoadedSettings, SettingsFile, Settings } from '../config/settings.js';
 import process from 'node:process';
 import { useGeminiStream } from './hooks/useGeminiStream.js';
@@ -86,10 +86,10 @@ interface MockServerConfig {
   getUserTier: Mock<() => Promise<string | undefined>>;
 }
 
-// Mock @aptx-cli/aptx-cli-core and its Config class
-vi.mock('@aptx-cli/aptx-cli-core', async (importOriginal) => {
+// Mock @conqxeror/aptx-cli-core and its Config class
+vi.mock('@conqxeror/aptx-cli-core', async (importOriginal) => {
   const actualCore =
-    await importOriginal<typeof import('@aptx-cli/aptx-cli-core')>();
+    await importOriginal<typeof import('@conqxeror/aptx-cli-core')>();
   const ConfigClassMock = vi
     .fn()
     .mockImplementation((optionsPassedToConstructor) => {
@@ -239,7 +239,7 @@ vi.mock('./config/auth.js', () => ({
 
 const mockedCheckForUpdates = vi.mocked(checkForUpdates);
 const { isGitRepository: mockedIsGitRepository } = vi.mocked(
-  await import('@aptx-cli/aptx-cli-core'),
+  await import('@conqxeror/aptx-cli-core'),
 );
 
 vi.mock('node:child_process');

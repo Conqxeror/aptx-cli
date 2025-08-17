@@ -6,7 +6,7 @@
 
 import { SlashCommand, CommandKind } from './types.js';
 import { MessageType } from '../types.js';
-import { SECURITY_TOOLS, autoInstallMissingTool, isToolInstalled } from '@aptx-cli/aptx-cli-core';
+import { SECURITY_TOOLS, autoInstallMissingTool, isToolInstalled } from '@conqxeror/aptx-cli-core';
 
 export const installCommand: SlashCommand = {
   name: 'install',

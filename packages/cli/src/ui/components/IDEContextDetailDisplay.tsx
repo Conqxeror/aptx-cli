@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { type File, type IdeContext } from '@aptx-cli/aptx-cli-core';
+import { type File, type IdeContext } from '@conqxeror/aptx-cli-core';
 import { Box, Text } from 'ink';
 import path from 'node:path';
 import { Colors } from '../colors.js';

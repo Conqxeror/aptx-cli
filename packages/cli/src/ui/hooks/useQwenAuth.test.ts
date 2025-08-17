@@ -11,12 +11,12 @@ import {
   AuthType,
   qwenOAuth2Events,
   QwenOAuth2Event,
-} from '@aptx-cli/aptx-cli-core';
+} from '@conqxeror/aptx-cli-core';
 import { LoadedSettings } from '../../config/settings.js';
 
 // Mock the qwenOAuth2Events
-vi.mock('@aptx-cli/aptx-cli-core', async () => {
-  const actual = await vi.importActual('@aptx-cli/aptx-cli-core');
+vi.mock('@conqxeror/aptx-cli-core', async () => {
+  const actual = await vi.importActual('@conqxeror/aptx-cli-core');
   const mockEmitter = {
     on: vi.fn().mockReturnThis(),
     off: vi.fn().mockReturnThis(),

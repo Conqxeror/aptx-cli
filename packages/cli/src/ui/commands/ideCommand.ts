@@ -11,7 +11,7 @@ import {
   IdeClient,
   getIdeDisplayName,
   getIdeInstaller,
-} from '@aptx-cli/aptx-cli-core';
+} from '@conqxeror/aptx-cli-core';
 import {
   CommandContext,
   SlashCommand,

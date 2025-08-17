@@ -25,7 +25,7 @@ import {
   Status as ToolCallStatusType,
   ApprovalMode,
   Icon,
-} from '@aptx-cli/aptx-cli-core';
+} from '@conqxeror/aptx-cli-core';
 import {
   HistoryItemWithoutId,
   ToolCallStatus,
@@ -33,8 +33,8 @@ import {
 } from '../types.js';
 
 // Mocks
-vi.mock('@aptx-cli/aptx-cli-core', async () => {
-  const actual = await vi.importActual('@aptx-cli/aptx-cli-core');
+vi.mock('@conqxeror/aptx-cli-core', async () => {
+  const actual = await vi.importActual('@conqxeror/aptx-cli-core');
   return {
     ...actual,
     ToolRegistry: vi.fn(),

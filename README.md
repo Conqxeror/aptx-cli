@@ -4,10 +4,10 @@
 
 ![APTX CLI Screenshot](./docs/assets/aptx-screenshot.png)
 
-[![npm version](https://img.shields.io/npm/v/@aptx-cli/aptx-cli.svg)](https://www.npmjs.com/package/@aptx-cli/aptx-cli)
+[![npm version](https://img.shields.io/npm/v/@conqxeror/aptx-cli.svg)](https://www.npmjs.com/package/@conqxeror/aptx-cli)
 [![License](https://img.shields.io/github/license/aptx-cli/aptx-cli.svg)](./LICENSE)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen.svg)](https://nodejs.org/)
-[![Downloads](https://img.shields.io/npm/dm/@aptx-cli/aptx-cli.svg)](https://www.npmjs.com/package/@aptx-cli/aptx-cli)
+[![Downloads](https://img.shields.io/npm/dm/@conqxeror/aptx-cli.svg)](https://www.npmjs.com/package/@conqxeror/aptx-cli)
 
 **AI-powered command-line tool for automated penetration testing and vulnerability assessment**
 
@@ -63,7 +63,7 @@ curl -qL https://www.npmjs.com/install.sh | sh
 ### Install from npm
 
 ```bash
-npm install -g @aptx-cli/aptx-cli@latest
+npm install -g @conqxeror/aptx-cli@latest
 aptx --version
 ```
 

@@ -9,9 +9,9 @@ import { getInstallationInfo, PackageManager } from './installationInfo.js';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as childProcess from 'child_process';
-import { isGitRepository } from '@aptx-cli/aptx-cli-core';
+import { isGitRepository } from '@conqxeror/aptx-cli-core';
 
-vi.mock('@aptx-cli/aptx-cli-core', () => ({
+vi.mock('@conqxeror/aptx-cli-core', () => ({
   isGitRepository: vi.fn(),
 }));
 

@@ -22,7 +22,7 @@ import {
   FileDiscoveryService,
   TelemetryTarget,
   FileFilteringOptions,
-} from '@aptx-cli/aptx-cli-core';
+} from '@conqxeror/aptx-cli-core';
 import { Settings } from './settings.js';
 
 import { Extension, annotateActiveExtensions } from './extension.js';

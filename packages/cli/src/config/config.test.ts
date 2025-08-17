@@ -11,7 +11,7 @@ import * as path from 'path';
 import { loadCliConfig, parseArguments } from './config.js';
 import { Settings } from './settings.js';
 import { Extension } from './extension.js';
-import * as ServerConfig from '@aptx-cli/aptx-cli-core';
+import * as ServerConfig from '@conqxeror/aptx-cli-core';
 
 vi.mock('os', async (importOriginal) => {
   const actualOs = await importOriginal<typeof os>();
@@ -31,9 +31,9 @@ vi.mock('read-package-up', () => ({
   ),
 }));
 
-vi.mock('@aptx-cli/aptx-cli-core', async () => {
+vi.mock('@conqxeror/aptx-cli-core', async () => {
   const actualServer = await vi.importActual<typeof ServerConfig>(
-    '@aptx-cli/aptx-cli-core',
+    '@conqxeror/aptx-cli-core',
   );
   return {
     ...actualServer,

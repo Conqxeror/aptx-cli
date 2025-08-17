@@ -22,10 +22,10 @@ import {
   type EditorType,
   checkHasEditorType,
   allowEditorTypeInSandbox,
-} from '@aptx-cli/aptx-cli-core';
+} from '@conqxeror/aptx-cli-core';
 
-vi.mock('@aptx-cli/aptx-cli-core', async () => {
-  const actual = await vi.importActual('@aptx-cli/aptx-cli-core');
+vi.mock('@conqxeror/aptx-cli-core', async () => {
+  const actual = await vi.importActual('@conqxeror/aptx-cli-core');
   return {
     ...actual,
     checkHasEditorType: vi.fn(() => true),

@@ -12,7 +12,7 @@ import {
   SlashCommandActionReturn,
   CommandKind,
 } from './types.js';
-import { getCurrentGeminiMdFilename } from '@aptx-cli/aptx-cli-core';
+import { getCurrentGeminiMdFilename } from '@conqxeror/aptx-cli-core';
 
 export const initCommand: SlashCommand = {
   name: 'init',

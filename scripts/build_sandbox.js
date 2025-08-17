@@ -92,13 +92,13 @@ execSync(
   },
 );
 
-console.log('packing @aptx-cli/aptx-cli-core ...');
+console.log('packing @conqxeror/aptx-cli-core ...');
 const corePackageDir = join('packages', 'core');
 rmSync(join(corePackageDir, 'dist', 'qwen-code-core-*.tgz'), {
   force: true,
 });
 execSync(
-  `npm pack -w @aptx-cli/aptx-cli-core --pack-destination ./packages/core/dist`,
+  `npm pack -w @conqxeror/aptx-cli-core --pack-destination ./packages/core/dist`,
   { stdio: 'ignore' },
 );
 
